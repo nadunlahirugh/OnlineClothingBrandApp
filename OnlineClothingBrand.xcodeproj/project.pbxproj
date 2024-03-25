@@ -14,6 +14,10 @@
 		F19E1B5D2BB1DC00000210AC /* OnlineClothingBrandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19E1B5C2BB1DC00000210AC /* OnlineClothingBrandTests.swift */; };
 		F19E1B672BB1DC00000210AC /* OnlineClothingBrandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19E1B662BB1DC00000210AC /* OnlineClothingBrandUITests.swift */; };
 		F19E1B692BB1DC00000210AC /* OnlineClothingBrandUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19E1B682BB1DC00000210AC /* OnlineClothingBrandUITestsLaunchTests.swift */; };
+		F19E1B772BB1E0AA000210AC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19E1B762BB1E0AA000210AC /* LoginView.swift */; };
+		F19E1B792BB1E588000210AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F19E1B782BB1E588000210AC /* GoogleService-Info.plist */; };
+		F19E1B7C2BB1EF4F000210AC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F19E1B7B2BB1EF4F000210AC /* FirebaseAnalytics */; };
+		F19E1B7E2BB1EF4F000210AC /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F19E1B7D2BB1EF4F000210AC /* FirebaseAnalyticsSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,8 @@
 		F19E1B622BB1DC00000210AC /* OnlineClothingBrandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineClothingBrandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19E1B662BB1DC00000210AC /* OnlineClothingBrandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineClothingBrandUITests.swift; sourceTree = "<group>"; };
 		F19E1B682BB1DC00000210AC /* OnlineClothingBrandUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineClothingBrandUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F19E1B762BB1E0AA000210AC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F19E1B782BB1E588000210AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19E1B7E2BB1EF4F000210AC /* FirebaseAnalyticsSwift in Frameworks */,
+				F19E1B7C2BB1EF4F000210AC /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +102,10 @@
 		F19E1B4A2BB1DBFD000210AC /* OnlineClothingBrand */ = {
 			isa = PBXGroup;
 			children = (
+				F19E1B752BB1E07A000210AC /* Views */,
 				F19E1B4B2BB1DBFD000210AC /* OnlineClothingBrandApp.swift */,
 				F19E1B4D2BB1DBFD000210AC /* ContentView.swift */,
+				F19E1B782BB1E588000210AC /* GoogleService-Info.plist */,
 				F19E1B4F2BB1DBFF000210AC /* Assets.xcassets */,
 				F19E1B512BB1DBFF000210AC /* Preview Content */,
 			);
@@ -127,6 +137,14 @@
 			path = OnlineClothingBrandUITests;
 			sourceTree = "<group>";
 		};
+		F19E1B752BB1E07A000210AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F19E1B762BB1E0AA000210AC /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +161,10 @@
 			dependencies = (
 			);
 			name = OnlineClothingBrand;
+			packageProductDependencies = (
+				F19E1B7B2BB1EF4F000210AC /* FirebaseAnalytics */,
+				F19E1B7D2BB1EF4F000210AC /* FirebaseAnalyticsSwift */,
+			);
 			productName = OnlineClothingBrand;
 			productReference = F19E1B482BB1DBFD000210AC /* OnlineClothingBrand.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +237,9 @@
 				Base,
 			);
 			mainGroup = F19E1B3F2BB1DBFD000210AC;
+			packageReferences = (
+				F19E1B7A2BB1E97F000210AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = F19E1B492BB1DBFD000210AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +258,7 @@
 			files = (
 				F19E1B532BB1DBFF000210AC /* Preview Assets.xcassets in Resources */,
 				F19E1B502BB1DBFF000210AC /* Assets.xcassets in Resources */,
+				F19E1B792BB1E588000210AC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19E1B772BB1E0AA000210AC /* LoginView.swift in Sources */,
 				F19E1B4E2BB1DBFD000210AC /* ContentView.swift in Sources */,
 				F19E1B4C2BB1DBFD000210AC /* OnlineClothingBrandApp.swift in Sources */,
 			);
@@ -582,6 +609,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F19E1B7A2BB1E97F000210AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F19E1B7B2BB1EF4F000210AC /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F19E1B7A2BB1E97F000210AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F19E1B7D2BB1EF4F000210AC /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F19E1B7A2BB1E97F000210AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F19E1B402BB1DBFD000210AC /* Project object */;
 }
