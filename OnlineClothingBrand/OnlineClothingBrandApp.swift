@@ -8,6 +8,15 @@
 import SwiftUI
 import Firebase
 
+enum Route : Hashable {
+    case login
+}
+
+
+class Coordinator : ObservableObject{
+    @Published var path = [Route]()
+}
+
 @main
 struct OnlineClothingBrandApp: App {
     
@@ -15,7 +24,7 @@ struct OnlineClothingBrandApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }

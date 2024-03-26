@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F13D33AB2BB334F3003FC5F4 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13D33AA2BB334F3003FC5F4 /* ProductDetailView.swift */; };
+		F13D33AD2BB335FD003FC5F4 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13D33AC2BB335FD003FC5F4 /* ProductListView.swift */; };
+		F13D33B12BB33783003FC5F4 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F13D33AF2BB33783003FC5F4 /* PlayfairDisplay-Bold.ttf */; };
+		F13D33B22BB33783003FC5F4 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F13D33B02BB33783003FC5F4 /* PlayfairDisplay-Regular.ttf */; };
 		F19E1B4C2BB1DBFD000210AC /* OnlineClothingBrandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19E1B4B2BB1DBFD000210AC /* OnlineClothingBrandApp.swift */; };
 		F19E1B4E2BB1DBFD000210AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19E1B4D2BB1DBFD000210AC /* ContentView.swift */; };
 		F19E1B502BB1DBFF000210AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19E1B4F2BB1DBFF000210AC /* Assets.xcassets */; };
-		F19E1B532BB1DBFF000210AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19E1B522BB1DBFF000210AC /* Preview Assets.xcassets */; };
 		F19E1B5D2BB1DC00000210AC /* OnlineClothingBrandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19E1B5C2BB1DC00000210AC /* OnlineClothingBrandTests.swift */; };
 		F19E1B672BB1DC00000210AC /* OnlineClothingBrandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19E1B662BB1DC00000210AC /* OnlineClothingBrandUITests.swift */; };
 		F19E1B692BB1DC00000210AC /* OnlineClothingBrandUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19E1B682BB1DC00000210AC /* OnlineClothingBrandUITestsLaunchTests.swift */; };
@@ -18,6 +21,23 @@
 		F19E1B792BB1E588000210AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F19E1B782BB1E588000210AC /* GoogleService-Info.plist */; };
 		F19E1B7C2BB1EF4F000210AC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F19E1B7B2BB1EF4F000210AC /* FirebaseAnalytics */; };
 		F19E1B7E2BB1EF4F000210AC /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F19E1B7D2BB1EF4F000210AC /* FirebaseAnalyticsSwift */; };
+		F1B91A7A2BB25E2500132600 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B91A792BB25E2500132600 /* LoginViewModel.swift */; };
+		F1B91A7D2BB25F3C00132600 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F1B91A7C2BB25F3C00132600 /* FirebaseAuth */; };
+		F1B91A7F2BB25FB600132600 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F1B91A7E2BB25FB600132600 /* FirebaseFirestore */; };
+		F1B91A812BB2676400132600 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B91A802BB2676400132600 /* SignupView.swift */; };
+		F1B91A832BB268FD00132600 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B91A822BB268FD00132600 /* TabView.swift */; };
+		F1B91AD32BB2704500132600 /* CategoryAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B91AC52BB2704500132600 /* CategoryAdd.swift */; };
+		F1B91AD42BB2704500132600 /* ExpensesAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B91AC62BB2704500132600 /* ExpensesAdd.swift */; };
+		F1B91AD52BB2704500132600 /* InpuTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B91AC72BB2704500132600 /* InpuTextField.swift */; };
+		F1B91AD62BB2704500132600 /* IncomeAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B91AC82BB2704500132600 /* IncomeAdd.swift */; };
+		F1B91AD72BB2704500132600 /* SegmentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B91AC92BB2704500132600 /* SegmentButton.swift */; };
+		F1B91AD82BB2704500132600 /* ArcShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B91ACA2BB2704500132600 /* ArcShape.swift */; };
+		F1B91AD92BB2704500132600 /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B91ACB2BB2704500132600 /* UserSessionManager.swift */; };
+		F1B91ADA2BB2704500132600 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B91ACC2BB2704500132600 /* BarChart.swift */; };
+		F1B91ADB2BB2704500132600 /* StatusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B91ACD2BB2704500132600 /* StatusButton.swift */; };
+		F1B91ADC2BB2704500132600 /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B91ACE2BB2704500132600 /* ButtonPrimary.swift */; };
+		F1B91AE02BB2704500132600 /* SavingAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B91AD22BB2704500132600 /* SavingAdd.swift */; };
+		F1B91AE32BB278E300132600 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B91AE22BB278E300132600 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,11 +58,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F13D33AA2BB334F3003FC5F4 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		F13D33AC2BB335FD003FC5F4 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		F13D33AF2BB33783003FC5F4 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		F13D33B02BB33783003FC5F4 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		F19E1B482BB1DBFD000210AC /* OnlineClothingBrand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineClothingBrand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19E1B4B2BB1DBFD000210AC /* OnlineClothingBrandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineClothingBrandApp.swift; sourceTree = "<group>"; };
 		F19E1B4D2BB1DBFD000210AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F19E1B4F2BB1DBFF000210AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F19E1B522BB1DBFF000210AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F19E1B582BB1DC00000210AC /* OnlineClothingBrandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineClothingBrandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19E1B5C2BB1DC00000210AC /* OnlineClothingBrandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineClothingBrandTests.swift; sourceTree = "<group>"; };
 		F19E1B622BB1DC00000210AC /* OnlineClothingBrandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineClothingBrandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +73,21 @@
 		F19E1B682BB1DC00000210AC /* OnlineClothingBrandUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineClothingBrandUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F19E1B762BB1E0AA000210AC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F19E1B782BB1E588000210AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1B91A792BB25E2500132600 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F1B91A802BB2676400132600 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		F1B91A822BB268FD00132600 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		F1B91AC52BB2704500132600 /* CategoryAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryAdd.swift; sourceTree = "<group>"; };
+		F1B91AC62BB2704500132600 /* ExpensesAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensesAdd.swift; sourceTree = "<group>"; };
+		F1B91AC72BB2704500132600 /* InpuTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InpuTextField.swift; sourceTree = "<group>"; };
+		F1B91AC82BB2704500132600 /* IncomeAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeAdd.swift; sourceTree = "<group>"; };
+		F1B91AC92BB2704500132600 /* SegmentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentButton.swift; sourceTree = "<group>"; };
+		F1B91ACA2BB2704500132600 /* ArcShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcShape.swift; sourceTree = "<group>"; };
+		F1B91ACB2BB2704500132600 /* UserSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSessionManager.swift; sourceTree = "<group>"; };
+		F1B91ACC2BB2704500132600 /* BarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		F1B91ACD2BB2704500132600 /* StatusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusButton.swift; sourceTree = "<group>"; };
+		F1B91ACE2BB2704500132600 /* ButtonPrimary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
+		F1B91AD22BB2704500132600 /* SavingAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingAdd.swift; sourceTree = "<group>"; };
+		F1B91AE22BB278E300132600 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +96,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F19E1B7E2BB1EF4F000210AC /* FirebaseAnalyticsSwift in Frameworks */,
+				F1B91A7F2BB25FB600132600 /* FirebaseFirestore in Frameworks */,
+				F1B91A7D2BB25F3C00132600 /* FirebaseAuth in Frameworks */,
 				F19E1B7C2BB1EF4F000210AC /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +119,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F13D33AE2BB33783003FC5F4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F13D33AF2BB33783003FC5F4 /* PlayfairDisplay-Bold.ttf */,
+				F13D33B02BB33783003FC5F4 /* PlayfairDisplay-Regular.ttf */,
+			);
+			name = Fonts;
+			path = "../../Furniture-Shop-App-UI-SwiftUI/Furniture_app/Fonts";
+			sourceTree = "<group>";
+		};
 		F19E1B3F2BB1DBFD000210AC = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +136,7 @@
 				F19E1B5B2BB1DC00000210AC /* OnlineClothingBrandTests */,
 				F19E1B652BB1DC00000210AC /* OnlineClothingBrandUITests */,
 				F19E1B492BB1DBFD000210AC /* Products */,
+				F1B91A7B2BB25F3C00132600 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,22 +153,17 @@
 		F19E1B4A2BB1DBFD000210AC /* OnlineClothingBrand */ = {
 			isa = PBXGroup;
 			children = (
+				F13D33AE2BB33783003FC5F4 /* Fonts */,
+				F1B91AC42BB2704500132600 /* UICommon */,
+				F1B91A782BB25DD700132600 /* ViewModel */,
 				F19E1B752BB1E07A000210AC /* Views */,
 				F19E1B4B2BB1DBFD000210AC /* OnlineClothingBrandApp.swift */,
 				F19E1B4D2BB1DBFD000210AC /* ContentView.swift */,
 				F19E1B782BB1E588000210AC /* GoogleService-Info.plist */,
 				F19E1B4F2BB1DBFF000210AC /* Assets.xcassets */,
-				F19E1B512BB1DBFF000210AC /* Preview Content */,
+				F1B91AE12BB278E300132600 /* Preview Content */,
 			);
 			path = OnlineClothingBrand;
-			sourceTree = "<group>";
-		};
-		F19E1B512BB1DBFF000210AC /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F19E1B522BB1DBFF000210AC /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		F19E1B5B2BB1DC00000210AC /* OnlineClothingBrandTests */ = {
@@ -141,8 +187,55 @@
 			isa = PBXGroup;
 			children = (
 				F19E1B762BB1E0AA000210AC /* LoginView.swift */,
+				F1B91A802BB2676400132600 /* SignupView.swift */,
+				F1B91A822BB268FD00132600 /* TabView.swift */,
+				F13D33AA2BB334F3003FC5F4 /* ProductDetailView.swift */,
+				F13D33AC2BB335FD003FC5F4 /* ProductListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F1B91A782BB25DD700132600 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1B91A792BB25E2500132600 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F1B91A7B2BB25F3C00132600 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1B91AC42BB2704500132600 /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				F1B91AC52BB2704500132600 /* CategoryAdd.swift */,
+				F1B91AC62BB2704500132600 /* ExpensesAdd.swift */,
+				F1B91AC72BB2704500132600 /* InpuTextField.swift */,
+				F1B91AC82BB2704500132600 /* IncomeAdd.swift */,
+				F1B91AC92BB2704500132600 /* SegmentButton.swift */,
+				F1B91ACA2BB2704500132600 /* ArcShape.swift */,
+				F1B91ACB2BB2704500132600 /* UserSessionManager.swift */,
+				F1B91ACC2BB2704500132600 /* BarChart.swift */,
+				F1B91ACD2BB2704500132600 /* StatusButton.swift */,
+				F1B91ACE2BB2704500132600 /* ButtonPrimary.swift */,
+				F1B91AD22BB2704500132600 /* SavingAdd.swift */,
+			);
+			name = UICommon;
+			path = ../../IOS_APP/IOS_CW1/UICommon;
+			sourceTree = "<group>";
+		};
+		F1B91AE12BB278E300132600 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1B91AE22BB278E300132600 /* Preview Assets.xcassets */,
+			);
+			name = "Preview Content";
+			path = "../../../untitled folder/OnlineClothingBrand/OnlineClothingBrand/Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +257,8 @@
 			packageProductDependencies = (
 				F19E1B7B2BB1EF4F000210AC /* FirebaseAnalytics */,
 				F19E1B7D2BB1EF4F000210AC /* FirebaseAnalyticsSwift */,
+				F1B91A7C2BB25F3C00132600 /* FirebaseAuth */,
+				F1B91A7E2BB25FB600132600 /* FirebaseFirestore */,
 			);
 			productName = OnlineClothingBrand;
 			productReference = F19E1B482BB1DBFD000210AC /* OnlineClothingBrand.app */;
@@ -256,8 +351,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F19E1B532BB1DBFF000210AC /* Preview Assets.xcassets in Resources */,
+				F13D33B22BB33783003FC5F4 /* PlayfairDisplay-Regular.ttf in Resources */,
+				F13D33B12BB33783003FC5F4 /* PlayfairDisplay-Bold.ttf in Resources */,
 				F19E1B502BB1DBFF000210AC /* Assets.xcassets in Resources */,
+				F1B91AE32BB278E300132600 /* Preview Assets.xcassets in Resources */,
 				F19E1B792BB1E588000210AC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,9 +380,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B91AD92BB2704500132600 /* UserSessionManager.swift in Sources */,
+				F1B91AD42BB2704500132600 /* ExpensesAdd.swift in Sources */,
+				F1B91AE02BB2704500132600 /* SavingAdd.swift in Sources */,
+				F1B91AD52BB2704500132600 /* InpuTextField.swift in Sources */,
+				F13D33AB2BB334F3003FC5F4 /* ProductDetailView.swift in Sources */,
+				F1B91A7A2BB25E2500132600 /* LoginViewModel.swift in Sources */,
+				F1B91AD72BB2704500132600 /* SegmentButton.swift in Sources */,
+				F1B91AD82BB2704500132600 /* ArcShape.swift in Sources */,
 				F19E1B772BB1E0AA000210AC /* LoginView.swift in Sources */,
+				F1B91AD62BB2704500132600 /* IncomeAdd.swift in Sources */,
 				F19E1B4E2BB1DBFD000210AC /* ContentView.swift in Sources */,
 				F19E1B4C2BB1DBFD000210AC /* OnlineClothingBrandApp.swift in Sources */,
+				F1B91A832BB268FD00132600 /* TabView.swift in Sources */,
+				F1B91A812BB2676400132600 /* SignupView.swift in Sources */,
+				F13D33AD2BB335FD003FC5F4 /* ProductListView.swift in Sources */,
+				F1B91ADA2BB2704500132600 /* BarChart.swift in Sources */,
+				F1B91ADB2BB2704500132600 /* StatusButton.swift in Sources */,
+				F1B91ADC2BB2704500132600 /* ButtonPrimary.swift in Sources */,
+				F1B91AD32BB2704500132600 /* CategoryAdd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +744,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F19E1B7A2BB1E97F000210AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalyticsSwift;
+		};
+		F1B91A7C2BB25F3C00132600 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F19E1B7A2BB1E97F000210AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F1B91A7E2BB25FB600132600 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F19E1B7A2BB1E97F000210AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
