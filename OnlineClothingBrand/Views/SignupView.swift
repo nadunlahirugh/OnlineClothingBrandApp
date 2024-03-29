@@ -11,140 +11,98 @@ struct SignupView: View {
     
     @StateObject var loginVM : LoginViewModel = LoginViewModel()
     
-    @EnvironmentObject var coordinator : Coordinator
+    @StateObject var coordinator = Coordinator()
     var body: some View {
-        NavigationView {
-            
-            ZStack {
+        ScrollView {
+            VStack(spacing: 5) {
+                Text("User Registration")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding(.bottom, 10)
                 
-                //            Color.secondary.opacity(0.2).ignoresSafeArea(edges : .top)
+                Image(uiImage: #imageLiteral(resourceName: "logo"))
+                    .resizable()
+                    .frame(width: 170, height: 170)
+                    .padding(.bottom, 10)
+                    .padding(.top, 10)
+
                 
-                VStack{
-                    
-                    VStack() {
+                InputTextField(text: $loginVM.fullName, placeholder: "Full name")
+                
+                InputTextField(text: $loginVM.email, placeholder: "Email address")
+                
+                InputTextField(text: $loginVM.password, placeholder: "Password", isSecure: true)
+                
+                InputTextField(text: $loginVM.confirmPassword, placeholder: "Confirm Password", isSecure: true)
+                
+                ButtonPrimary(title: "Sign Up", action: {
+                    // Action to perform when the button is tapped
+                    loginVM.registerUser(){
                         
-                        Image("signup")
-                            .resizable().aspectRatio(contentMode: .fit)
-                            .frame(width: 150)
-                    }.padding()
-                    
-                    VStack{
-                        Text("Sign Up").font(.system(size: 36)) // Set the font size
-                            .foregroundColor(Color("loginfontone")) // Set the font color
-                            .fontWeight(.bold)
-                    }.padding()
-                    VStack{
-                        Text("Create your account").font(.system(size: 20)) // Set the font size
-                            .foregroundColor(Color("loginfontone"))// Set the font color
-                            .fontWeight(.light)
+                        result in
                         
+                        switch result {
+                        case .success(_):
+                            
+                            coordinator.navigate(to: .login)
+                        
+                        case .failure(let error):
+                            loginVM.errorMessage = error.errorMessage
+                        }
                         
                     }
                     
-                    
-                    
-                    VStack{
-                        
-                        VStack{
-                            
-                            
-                            TextField("Email", text: $loginVM.email)  .autocapitalization(.none)
-                                .frame(height: 40)
-                                .textFieldStyle(PlainTextFieldStyle())
-                                .padding([.horizontal], 10)
-                                .cornerRadius(16)
-                                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))
-                                .padding([.horizontal], 10).background(Color("TextColour")).border(Color("TextColour"))
-                        }
-                        
-                        
-                        
-                        
-                        VStack{
-                            
-                            
-                            TextField("Password", text: $loginVM.password)  .autocapitalization(.none)
-                                .frame(height: 40)
-                                .textFieldStyle(PlainTextFieldStyle())
-                                .padding([.horizontal], 10)
-                                .cornerRadius(16)
-                                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))
-                                .padding([.horizontal], 10).background(Color("TextColour")).border(Color("TextColour"))
-                        }.padding([.vertical], 10)
-                        
-                        VStack{
-                            
-                            
-                            TextField("Concirm Password", text: $loginVM.confirmPassword)  .autocapitalization(.none)
-                                .frame(height: 40)
-                                .textFieldStyle(PlainTextFieldStyle())
-                                .padding([.horizontal], 10)
-                                .cornerRadius(16)
-                                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))
-                                .padding([.horizontal], 10).background(Color("TextColour")).border(Color("TextColour"))
-                        }.padding([.vertical],5)
-                        
-                        
-                        
-                        
-                        
-                        Button(action: {
-                            // Action to perform when the button is tapped
-                            loginVM.registerUser(){
-                                
-                                result in
-                                
-                                switch result {
-                                case .success(_):
-                                    
-                                    coordinator.path.append(.login)
-                                case .failure(let error):
-                                    loginVM.errorMessage = error.errorMessage
-                                }
-                                
-                            }
-                            
-                        }) {
-                            Text("Sign Up")
-                                .font(.headline)
-                                .padding()
-                                .background(Color.orange) // Set the button's background color
-                                .foregroundColor(.white) // Set the text color
-                                .cornerRadius(10) // Round the button's corners
-                        }
-                        
-                        if let errorMessage = loginVM.errorMessage{
-                            Text(errorMessage)
-                        }
-                        
-                    }.padding()
-                    
-                                        VStack{
-                                            HStack{
-                    
-                                                Text("You have an account ?")
-                    
-                                                NavigationLink(destination: LoginView()) {
-                                                    Text("Sign In")
-                                                        .foregroundColor(.blue)
-                                                }
-                    
-                                            }
-                    
-                                        }
-                    
-                    
-                    Spacer()
-                }.padding(.top,75)
+                })
+
+                Text("or sign in using below social logins")
+                    .foregroundColor(Color.black.opacity(0.6))
+                    .font(.callout)
+                    .padding(.top, 10)
                 
+                SocialLoginButton(image: Image(uiImage: #imageLiteral(resourceName: "AppleLogo")), text: Text("Sign in with Apple"))
                 
-                
-            }.background(Color("bgcolour"))
-            
-        }.navigationBarBackButtonHidden(true)
+                SocialLoginButton(image: Image(uiImage: #imageLiteral(resourceName: "GoogleLogo")), text: Text("Sign in with Google"))
+                    .padding(.vertical, 10)
+            }
+            .padding()
+//            .alert(isPresented: $showAlert) {
+//                Alert(
+//                    title: Text(alertTitle),
+//                    message: Text(registrationStatus),
+//                    dismissButton: .default(Text("OK"))
+//                )
+//            }
+        }
     }
 }
 
 #Preview {
     SignupView()
+}
+
+
+struct SocialLoginButton: View {
+    var image: Image
+    var text: Text
+    
+    var body: some View {
+        VStack {
+            HStack {
+                image
+                    .resizable()
+                    .frame(width: 30, height: 30)
+                    .padding(.horizontal)
+                Spacer()
+                text
+                    .font(.title2)
+                Spacer()
+            }
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(Color.white)
+            .cornerRadius(50.0)
+            .shadow(color: Color.black.opacity(0.08), radius: 10, x: 0.0, y: 0.0)
+        }
+        .padding(.bottom, -15)
+    }
 }

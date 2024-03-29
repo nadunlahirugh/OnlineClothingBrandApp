@@ -8,15 +8,34 @@
 import SwiftUI
 import Firebase
 
-enum Route : Hashable {
+//enum Route : Hashable {
+//    case login
+//}
+//
+//
+//class Coordinator : ObservableObject{
+//    @Published var path = [Route]()
+//}
+
+enum Route: Hashable {
     case login
+    // Add more cases for other destinations in your app
 }
 
-
-class Coordinator : ObservableObject{
+class Coordinator: ObservableObject {
     @Published var path = [Route]()
+    
+    // Function to navigate to a specific route
+    func navigate(to route: Route) {
+        path.append(route)
+    }
+    
+    // Function to navigate back
+    func navigateBack() {
+        guard !path.isEmpty else { return }
+        path.removeLast()
+    }
 }
-
 @main
 struct OnlineClothingBrandApp: App {
     

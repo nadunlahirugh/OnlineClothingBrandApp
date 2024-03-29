@@ -13,7 +13,7 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack(spacing: 20) {
+                VStack(spacing: 10) {
                     Text("User Login")
                         .font(.largeTitle)
                         .fontWeight(.bold)
@@ -21,9 +21,9 @@ struct LoginView: View {
                     
                     Image(uiImage: #imageLiteral(resourceName: "logo"))
                         .resizable()
-                        .frame(width: 200, height: 180)
-                        .padding(.bottom, 40)
-                        .padding(.top, 40)
+                        .frame(width: 300, height: 300)
+                        .padding(.bottom, 20)
+                        .padding(.top, 20)
                     
                     InputTextField(text: $loginVM.email, placeholder: "Email address")
                     
@@ -37,7 +37,7 @@ struct LoginView: View {
                         EmptyView()
                     }
                     
-                    NavigationLink(destination: LoginView(), label: {
+                    NavigationLink(destination: SignupView(), label: {
                         HStack {
                             Text("New around here?")
                                 .foregroundColor(Color.black)

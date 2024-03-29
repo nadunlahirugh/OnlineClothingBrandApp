@@ -29,6 +29,7 @@ class LoginViewModel : ObservableObject {
     @Published var email : String = ""
     @Published var password : String = ""
     @Published var confirmPassword : String = ""
+    @Published var fullName : String = ""
     @Published var errorMessage: String?
     @Published var isNavigationActive : Bool = false
     @Published var showAlert: Bool = false
@@ -40,12 +41,16 @@ class LoginViewModel : ObservableObject {
     
     func registerUser(completion:@escaping(Result<Bool,FBError>) -> Void) {
         
+        print("set user")
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if let error {
+                print("failure")
                 DispatchQueue.main.async {
                     completion(.failure(.error(error.localizedDescription)))
                 }
             } else {
+                print("result")
+                print(authResult)
                 let userID = authResult?.user.uid ?? ""
                 let userData = ["email": self.email,"password":self.password]
                 
