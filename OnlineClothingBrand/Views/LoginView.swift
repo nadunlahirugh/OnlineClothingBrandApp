@@ -33,7 +33,7 @@ struct LoginView: View {
                         loginVM.loginUser();
                     })
                     
-                    NavigationLink(destination: TabView(), isActive: $loginVM.isNavigationActive) {
+                    NavigationLink(destination: ProductListView(), isActive: $loginVM.isNavigationActive) {
                         EmptyView()
                     }
                     

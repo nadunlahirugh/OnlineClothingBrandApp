@@ -9,13 +9,22 @@ import SwiftUI
 
 struct ProductDetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    var body: some View {
+    
+    @ObservedObject var productsViewModel = ProductsViewModel();
+    
+    
+//    var product: ProductModel?
+   
+    
+    
+  
+var body: some View {
         ZStack {
             Color("Bg")
             ScrollView  {
                 //            Product Image
                 
-                    Image("chair_1")
+                Image("chair_1")
                         .resizable()
                         .aspectRatio(1,contentMode: .fit)
                         .edgesIgnoringSafeArea(.top)
@@ -92,6 +101,9 @@ struct ProductDetailView: View {
                             }
 
                             struct DescriptionView: View {
+                                
+//                                let product : ProductModel?
+                                @ObservedObject var productsViewModel = ProductsViewModel();
                                 var body: some View {
                                     VStack (alignment: .leading) {
                                         //                Title
@@ -112,7 +124,7 @@ struct ProductDetailView: View {
                                         Text("Description")
                                             .fontWeight(.medium)
                                             .padding(.vertical, 8)
-                                        Text("Luxury Swedian Chair is a contemporary chair based on the virtues of modern craft. it carries on the simplicity and honestly of the archetypical chair.")
+                                        Text(productsViewModel.selectProduct!.description)
                                             .lineSpacing(8.0)
                                             .opacity(0.6)
                                         

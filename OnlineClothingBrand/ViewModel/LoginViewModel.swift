@@ -81,6 +81,9 @@ class LoginViewModel : ObservableObject {
                 self.showAlert = true
             }
             else {
+                
+                print("user")
+                print(authResult)
                 // Authentication success, navigate to DashboardView
                 self.navigateToDashboard()
             }
